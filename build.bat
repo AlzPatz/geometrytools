@@ -9,10 +9,10 @@ if not "%PackageVersion%" == "" (
    set version=%PackageVersion%
 )
 
-%MsBuildExe% geometrytools\GeometryTools.csproj /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
-
 mkdir geometrytools\bin
 mkdir geometrytools\bin\%config%
 mkdir geometrytools\bin\%config%\netstandard2.0
+
+%MsBuildExe% geometrytools\GeometryTools.csproj /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 
 %NuGet% pack "geometrytools\geometrytools.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"

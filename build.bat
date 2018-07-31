@@ -17,4 +17,4 @@ cd ..
 
 dir geometrytools\bin\%config%\netstandard2.0
 
-%NuGet% pack "geometrytools\geometrytools.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
+%NuGet% pack "geometrytools\geometrytools.nuspec2" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"

@@ -16,7 +16,8 @@ mkdir geometrytools\bin\%config%\netstandard2.0
 %MsBuildExe% geometrytools\GeometryTools.csproj /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 
 cd bin\%config%\netstandard2.0
-echo ls
+ls
+cd ..
 cd ..
 cd ..
 

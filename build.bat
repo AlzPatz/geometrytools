@@ -13,6 +13,10 @@ mkdir geometrytools\bin
 mkdir geometrytools\bin\%config%
 mkdir geometrytools\bin\%config%\netstandard2.0
 
+cd geometrytools
+
+dotnet build 
+
 call %NuGet% restore
 
 "%MsBuildExe%" geometrytools\GeometryTools.csproj /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false

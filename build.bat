@@ -17,6 +17,8 @@ cd geometrytools
 
 dotnet build 
 
+cd ..
+
 dir geometrytools\bin\%config%\netstandard2.0
 
 %NuGet% pack "geometrytools\geometrytools.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"

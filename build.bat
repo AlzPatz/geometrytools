@@ -13,7 +13,7 @@ mkdir geometrytools\bin
 mkdir geometrytools\bin\%config%
 mkdir geometrytools\bin\%config%\netstandard2.0
 
-
+%MsBuildExe% geometrytools\GeometryTools.csproj 
 
 dir geometrytools\bin\%config%\netstandard2.0
 

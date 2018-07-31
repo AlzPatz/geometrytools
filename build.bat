@@ -9,10 +9,6 @@ if not "%PackageVersion%" == "" (
    set version=%PackageVersion%
 )
 
-mkdir geometrytools\bin
-mkdir geometrytools\bin\%config%
-mkdir geometrytools\bin\%config%\netstandard2.0
-
 cd geometrytools
 
 dotnet build 

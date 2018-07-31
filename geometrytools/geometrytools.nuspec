@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GeometryTools</id>
+    <version>$version$</version>
+    <title>GeometryTools</title>
+    <authors>Alex Paterson</authors>
+    <owners>Alex Paterson</owners>
+    <licenseUrl>N/A</licenseUrl>
+    <projectUrl>N/A</projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Basic Geometry Tools. C# .netstandard2.0. Line and Polygon Intersection, Curve Calculation and simple Partition Tree</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright Alex Paterson. All rights reserved.</copyright>
+    <tags>Geometry Tools Intersection Curve 2d</tags>
+  </metadata>
+  <files>
+	<file src="bin\%config%\GeometryTools.dll" target="lib\netstandard2.0\GeometryTools.dll" />
+  </files>
+</package>
